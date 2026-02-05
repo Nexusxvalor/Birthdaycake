@@ -132,7 +132,7 @@
 
             const BLOW_RATIO_THRESHOLD = 0.5;
 
-            if (ratio > BLOW_RATIO_THRESHOLD && !blown) {
+           if (ratio < BLOW_RATIO_THRESHOLD && !blown) {
               blown = true;
               blowOutCandles();
             }
